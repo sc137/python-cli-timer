@@ -1,4 +1,4 @@
-simple command line timer
+simple python command line timer
 
 starting the timer with a value will set it for that many minutes
 
@@ -7,7 +7,6 @@ starting the timer with a value will set it for that many minutes
 starting the timer with no cli value will prompt for it:
 
 ![](1.png)
-
 ![](2.png)
 
 Add it to your .profile
