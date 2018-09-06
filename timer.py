@@ -16,6 +16,7 @@ alarm = ('watch_alarm.wav')
 # if it was, use that in minutes
 if len(sys.argv) > 1:
     reminder = int(sys.argv[1])
+    message = "your reminder"
 else:
     message = input("reminder message: ")
     reminder = input("remind in X minutes: ")
