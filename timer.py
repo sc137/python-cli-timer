@@ -10,6 +10,11 @@ import subprocess
 import os
 import sys
 
+# you may need the script to change directory
+# to be in the same location as your wav file
+# os.chdir('/your/path/here/')
+
+# must run in the same directory as the wav file
 alarm = ('watch_alarm.wav')
 
 # was a time specified at the prompt?
@@ -42,7 +47,11 @@ while datetime.datetime.now() < later:
 print('\a')
 
 # sound the alarm
+# for macOS
 alarmPlay = subprocess.Popen(['afplay', 'watch_alarm.wav'])
+
+# for ubuntu
+# alarmPlay = subprocess.Popen(['aplay', 'watch_alarm.wav'])
 
 # notify the user and give them a chance to kill the alarm
 print("You're timer is complete: ", message)
